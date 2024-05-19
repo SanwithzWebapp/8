@@ -217,7 +217,7 @@
       $.post(url, JSON.stringify(records), function(data) {
         $.LoadingOverlay("hide");
         if (data.status === 'success') {
-          Swal.fire('Success', 'Attendance data saved to sheet!', 'success');
+          Swal.fire('Success', 'บันทึกข้อมูลเรียบร้อย', 'success');
         } else {
           Swal.fire('Error', 'Failed to save attendance data!', 'error');
         }
